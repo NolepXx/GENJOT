@@ -296,8 +296,8 @@ class Menu:
 		self.jol = Console()
 		self.tol = Console()
 		prints(Panel(f"{K2}        {self.negara}",width=87,padding=(0,30),title=f"{M2}• {H2}• {K2}• {H2}Negara {M2}• {H2}• {K2}•",subtitle=f"{M2}• {H2}• {K2}• {H2}Version : VERSI 2.2{M2} • {H2}• {K2}•",style=f"{color_panel}"))
-		yonkou.append(Panel(f" {K2}Nama Akun       {P2}: {H2}{nama}\n {K2}Status Pengguna {P2}: {H2}PRIBADI\n {K2}Ip Address      {P2}: {H2}{self.ip}\n {K2}Tanggal         {P2}: {H2}{tgl}",width=43,padding=(0,2),title=f"{M2}• {H2}• {K2}• {K2}Info-JandaMuda {M2}• {H2}• {K2}•",style=f"{color_panel}"))
-		yonkou.append(Panel(f" {K2}Recode By {P2}: {H2}DensXyz\n {K2}Github  {P2} : {H2}github.com\n{K2} Facebook {P2}: {H2}Dens\n{K2} Whatsapp {P2}: {H2}+62*************",width=43,padding=(0,2),title=f"{M2}• {H2}• {K2}• {K2}Info-JandaPirang {M2}• {H2}• {K2}•",style=f"{color_panel}"))
+		yonkou.append(Panel(f" {K2}Nama Akun       {P2}: {H2}{nama}\n {K2}Status Pengguna {P2}: {H2}PRIBADI\n {K2}Ip Address      {P2}: {H2}{self.ip}\n {K2}Tanggal         {P2}: {H2}{tgl}",width=43,padding=(0,2),title=f"{M2}• {H2}• {K2}• {K2}Info-Akun {M2}• {H2}• {K2}•",style=f"{color_panel}"))
+		yonkou.append(Panel(f" {K2}Recode By {P2}: {H2}DensXyz\n {K2}Github  {P2} : {H2}github.com\n{K2} Facebook {P2}: {H2}Dens\n{K2} Whatsapp {P2}: {H2}+62*************",width=43,padding=(0,2),title=f"{M2}• {H2}• {K2}• {K2}Info-Source-code {M2}• {H2}• {K2}•",style=f"{color_panel}"))
 		self.jol.print(Columns(yonkou))
 		cetak(Panel(f"{H2}Sunshine ID, Rachel ID, Fall Xavier, Suwan Dundo",width=87,title=f"{H2}Thanks To",style=f"{color_panel}"))
 		prints(Panel(f"{H2}\t                           Daftar Menu",width=87,style=f"{color_panel}"))
@@ -310,7 +310,7 @@ class Menu:
 		###------------[ logout ]------------###
 		if menu in["logout"]:
 			os.system("rm data/cookie")
-			exit(prints(Panel(f"""{H2}berhasil menghapus cookie, silahkan ketik ulang python haki-fb.py""",width=87,style=f"{color_panel}")))
+			exit(prints(Panel(f"""{H2}berhasil menghapus cookie, silahkan ketik ulang python Genjot.py""",width=87,style=f"{color_panel}")))
 		###----------[ ID PUBLIK ]---------- ###
 		elif menu in["1","01"]:
 			prints(Panel(f"""{P2}     masukan id target, pastikan id target bersifat publik dan tidak private""",subtitle=f"{P2}ketik {H2}me{P2} untuk dump dari teman sendiri",width=87,style=f"{color_panel}"))
