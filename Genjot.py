@@ -1,4 +1,4 @@
-cek###----------[ IMPORT MODULE LAIN ]---------- ###
+###----------[ IMPORT MODULE LAIN ]---------- ###
 import os, sys, re, time, requests, calendar, random, bs4, uuid, json, subprocess, base64
 from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup as parser
