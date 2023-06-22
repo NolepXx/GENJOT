@@ -184,10 +184,10 @@ class Logo:
  \        /  /" \   :)(:   _) \  /   /  \\  \ |:       :) \        /  |    \    \ | \        / /   /   (:      "| 
   \"_____/  (_______/  \_______)(___/    \___)(________/   \"_____/    \___|\____\)  \"_____/ |___/     \_______) 
                                                                                                                   
-  Made By {M2} NOLEPXXXX {P2}CYNAMOL OF SUGIONO FIGHT
+  {B2} Made By {M2} NOLEPXXXX {P2}CYNAMOL OF SUGIONO FIGHT
 {B2}╭──────────────────────╮{B2}╭───────────────╮{B2}╭────────────────────────────╮
-{B2}│ {P2}Author : Fall Xavier {B2}│{B2}│ {P2}Version : 2.2 {B2}│{B2}│ {P2}Recode By : DensXyz/NOLEP {B2}       │
-{B2}╰──────────────────────╯{B2}╰───────────────╯{B2}╰────────────────────────────╯""",width=80,style=f"{color_panel}"))
+{B2}│ {P2}Author : Fall Xavier {B2}│{B2}│ {P2}Version : 2.2 {B2}│{B2}│ {P2}Recode By : DensXyz/NOLEPXXXX {B2}       │
+{B2}╰──────────────────────╯{B2}╰───────────────╯{B2}╰────────────────────────────╯""",width=90,style=f"{color_panel}"))
 	
 	
 	
