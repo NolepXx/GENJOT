@@ -674,6 +674,7 @@ class Crack:
 						tree.add(Panel(f"{K2}   Checkpoint-Login{P2}",width=30,padding=(0,2),style=f"{color_cp}"))
 						tree.add(f"\r{P2}User ID {P2}     : {K2}{user}")
 						tree.add(f"{P2}Password {P2}    : {K2}{pw}")
+						tree.add(f"{P2}Tahunz {P2}    : {K2}{tahun}")
 						tree.add(Panel(f"{K2}{ua}{P2}",width=83,padding=(0,2),style=f"{color_cp}"))
 						prints(tree)
 						open(f"CP/{self.hari_ini}.txt","a").write(f"{user}|{pw}\n")
